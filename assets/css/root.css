@@ -1,0 +1,13 @@
+:root{
+    --color-brown : #C70039;
+    --color-admin : #20262E;
+    --color-orange : #fd411b;
+    --borderbox: #6ea8fe;
+    --gray: #f5f5f5;
+    --gray2: #c5c5c5;
+    --gray3: #efeeee;
+    --ffml: 'Titillium Web', sans-serif;
+    --bggd: linear-gradient(90deg, #b144af, #ec419d);
+    --bggdauth: linear-gradient(90deg, #C70039, #fb0081);
+    --bgvip: linear-gradient(90deg, #fd411b,#ff2a00);
+}

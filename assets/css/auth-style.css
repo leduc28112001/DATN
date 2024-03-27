@@ -1,0 +1,75 @@
+#form-auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-admin);
+    background-size: cover;
+    height: 100vh;
+}
+#form-auth form{
+    width: 350px;
+    padding: 30px;
+    background: white;
+    border-radius: 5px;
+}
+#form-auth form h1{
+    text-align: center;
+}
+#form-auth label{
+    display: block;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+#form-auth input{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #c5c5c5;
+    border-radius: 3px;
+    transition: 0.1s;
+}
+#form-auth input:focus{
+    outline: 3px solid #ff2a00;
+    transition: 0.1s;
+    border-color: #fd411b;
+}
+#form-auth button{
+    width: 100%;
+    display: block;
+    padding: 12px 7px;
+    margin: 20px 0px;
+    font-weight: bold;
+    background: var(--color-admin);
+    background-size: cover;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+}
+#form-auth button:hover{
+    opacity: 0.9;
+}
+.more-form{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.more-form a{
+    color: #fd411b;
+    font-weight: bold;
+}
+.more-form a:hover{
+    color: #ec419d;
+}
+a.forgotpassword{
+    margin-top: 10px;
+}
+#error-confirm{
+    font-weight: bold;
+    color: red;
+}
+a.back-web{
+    text-decoration: underline;
+    color: black;
+    margin-top: 20px;
+}

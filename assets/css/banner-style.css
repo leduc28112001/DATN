@@ -1,0 +1,47 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider-container:hover button {
+    visibility: visible;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.slider-container button {
+    transition: 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background-color: rgb(227, 227, 227);
+    color: var(--main-color);
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}

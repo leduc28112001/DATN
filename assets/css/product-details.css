@@ -1,0 +1,370 @@
+#product-details{
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0px 1px 2px #dadada;
+}
+.image-pdts{
+    grid-column: 1/3;
+    display: grid;
+    gap: 10px;
+}
+.image-pdts img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 1px 2px #dadada;
+    border-radius: 2px;
+    border: 1px solid #dadada;
+}
+/* INFORMATION */
+.information-pdts{
+    grid-column: 3/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.title-pdts{
+    font-size: 20px;
+}
+.discount-pdts{
+    font-size: 14px;
+    font-weight: bold;
+}
+.quantity-sold-commment-pdts{
+    padding: 10px 0px;
+}
+/* SELECT COLOR SIZE */
+.selectCLS > div{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* SELECT COLOR SIZE */
+.price-pdts{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f5f5f5;
+    margin: 10px 0px;
+}
+.cost-pdts{
+    color: black;
+    text-decoration: line-through;
+}
+.price-pdts-end{
+    color: red;
+    font-size: 25px;
+}
+.control-quantity{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100px;
+    border: 2px solid var(--gray3);
+}
+button#down-qtt{
+    grid-column: 1/2;
+    border: none;
+    padding: 5px 0px;
+    background-color: white;
+    color: black;
+}
+#quantity_add_cart{
+    grid-column: 2/4;
+    border: none;
+    text-align: center;
+    outline: none;
+    border-left: 2px solid var(--gray3);
+    border-right: 2px solid var(--gray3);
+}
+/* Ẩn đi các điều khiển của input[type="number"] */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; /* Loại bỏ margin để tránh lề trống */
+}
+button#up-qtt{
+    border: none;
+    grid-column: 4/5;
+    padding: 5px 0px;
+    background-color: white;
+    color: black;
+}
+button.button-action-pdt{
+    padding: 10px 60px;
+    margin: 10px 0px;
+    font-size: 16px;
+    background-color: var(--color-admin);
+    color: white;
+    font-weight: bold;
+    border: 2px solid var(--color-admin);
+    border-radius: 2px;
+    font-family: 'Cabin', sans-serif;
+}
+button.button-action-pdt:hover{
+    border: 2px solid var(--color-admin);
+    box-shadow: 0px 0px 5px 1px var(--color-admin);
+    transition: 0.2s;
+}
+/* SUBIMAGE */
+.sub-image-pdts{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+}
+.sub-image-pdts img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0px 1px 2px #dadada;
+    border: 1px solid #dadada;
+}
+.box-subimage{
+    height: 100px;
+}
+/* SUBIMAGE */
+/* INFORMATION */
+/* DETAILS - DESCRIPTION */
+.infor-more{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.detais-description-pdts{
+    grid-column: 1/5;
+    padding: 20px;
+    box-shadow: 0px 1px 2px #dadada;
+    margin: 20px 0px;
+    background-color: white;
+}
+.title-details-description-pdts{
+    background-color: #f5f5f5;
+    padding: 15px 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.content-details-description-pdts{
+    padding: 15px 10px;
+}
+/* DETAILS - DESCRIPTION */
+/* ITEM DISCOUNT CODE */
+.all-discounts{
+    padding: 20px;
+    box-shadow: 0px 1px 2px #dadada;
+    margin: 20px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.item-code-discount{
+    padding: 10px;
+    border: 1px solid var(--color-admin);
+    background-color: var(--color-admin);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    border-radius: 3px;
+}
+.infor-item-code{
+    grid-column: 1/3;
+}
+.infor-item-code span{
+    color: white;
+    display: block;
+}
+.add-code-discount{
+    grid-column: 3/4;
+}
+.add-code-discount button{
+    display: block;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 12px;
+    border-radius: 2px;
+}
+/* ITEM DISCOUNT CODE */
+/* COMMENT */
+#comments{
+    grid-column: 1/5;
+    padding: 0px;
+    box-shadow: 0px 1px 2px #dadada;
+    margin: 20px 0px;
+    background-color: white;
+}
+.input-comment{
+    padding: 0px 10px;
+}
+#comments form{
+    display: flex;
+    align-items: center;
+    border: 1.5px solid gray;
+    border-radius: 2px;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+#comments form input#content-comment{
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+#comments form button{
+    padding: 10px 20px;
+    border: none;
+    border-left: 2px solid gray;
+    background-color: gray;
+    color: white;
+}
+#comments form button:hover{
+    font-weight: bold;
+    transition: 0.2s;
+}
+.all-comments{
+    padding: 10px;
+    display: grid;
+    gap: 30px;
+}
+.user-comment{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-user-comment{
+    display: flex;
+    gap: 10px;
+}
+.avatar-user-comment{
+    overflow: hidden;
+    border-radius: 40px;
+    width: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    height: 60px;
+}
+.avatar-user-comment img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.infor-user-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.delete-comment{
+    width: 25px;
+    height: 25px;
+    padding: 0px 5px;
+    border-radius: 100%;
+    border: none;
+    color: white;
+    background-color: red;
+}
+button#comment{
+    border-radius: 0px;
+}
+/* COMMENT */
+
+/* -------------------------------- HIGHLIGHT ------------------------------- */
+/* CSS cho input được chọn */
+/* CSS cho input được chọn */
+/* -------------------------------- HIGHLIGHT ------------------------------- */
+.color{
+    box-shadow: 0px 0px 3px 0px gray;
+}
+/* ---------- FRAME RESPONSIVE --------- */
+@media screen and (max-width: 1080px){
+    #product-details{
+        grid-template-columns: repeat(6,1fr);
+    }
+    #product-details .image-pdts{
+        grid-column: 1/4;
+    }
+    #product-details .information-pdts{
+        grid-column: 4/7;
+    }
+    #product-details .sub-image-pdts{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .infor-more .item-code-discount{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .infor-more .add-code-discount{
+        grid-column: 1/2;
+    }
+    .infor-more.infor-item-code{
+        grid-column: 1/2;
+    }
+}
+@media screen and (max-width: 900px){}
+@media screen and (max-width: 768px){
+    .infor-more .detais-description-pdts{
+        grid-column: 1/6;
+    }
+    #product-details .sub-image-pdts{
+        grid-template-columns: repeat(3,1fr);
+    }
+    main .infor-more .all-discounts{
+        display: none;
+    }
+    #product-details{
+        padding: 5px;
+    }
+    #product-details .image-pdts{
+        grid-column: 1/7;
+    }
+    #product-details .information-pdts{
+        grid-column: 1/7;
+    }
+    #product-details .sub-image-pdts{
+        grid-template-columns: repeat(6,1fr);
+        order: -1;
+    }
+    .infor-more .detais-description-pdts{
+        padding: 10px;
+    }
+    .infor-top form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 667px){}
+@media screen and (max-width: 575px){
+    #product-details .sub-image-pdts{
+        grid-template-columns: repeat(4,1fr);
+        order: -1;
+    }
+    button#add-to-cart{
+        width: 100%;
+    }
+    main .control-quantity{
+        width: 100%;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 480px){
+    #product-details .sub-image-pdts{
+        grid-template-columns: repeat(2,1fr);
+        order: -1;
+    }
+}
+@media screen and (max-width: 414px){}
+@media screen and (max-width: 359px){}
+@media screen and (max-width: 320px){}
+/* ---------- FRAME RESPONSIVE --------- */

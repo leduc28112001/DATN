@@ -1,0 +1,173 @@
+#my-profile{
+    background-color: white;
+    padding: 25px 20px 40px 20px;
+}
+.my-profile{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+#my-profile h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.avatar{
+    grid-column: 1/2;
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+.avatar img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1.5px solid gray;
+}
+.infor-user-profile{
+    grid-column: 2/6;
+}
+#boxs-infor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.box-infor label{
+    display: block;
+    padding: 2px 0px;
+}
+.box-infor input{
+    display: block;
+    padding: 13px 10px;
+    width: 100%;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 2px;
+}
+.box-infor input:focus{
+    outline: 3px solid #ff2a00;
+    transition: 0.1s;
+    border-color: #ee4e2e;
+}
+button#editProfile,#eP{
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+a.backProfile{
+    width: 50px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 7px 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: block;
+}
+form#uploadAvatar{
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    display: none;
+}
+form#uploadAvatar label{
+    font-size: 25px;
+    cursor: pointer;
+}
+form#uploadAvatar button{
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--color-admin);
+    color: white;
+    border-radius: 20px;
+    border: 2px solid var(--color-admin);
+}
+form#uploadAvatar button:hover{
+    background-color: green;
+    border: 2px solid rgb(0, 90, 0);
+    transition: 0.2s;
+}
+#editInformationUser{
+    display: none;
+}
+
+/* -------------------------------- MY ORDER -------------------------------- */
+.my-order table{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1.5px solid rgb(240, 240, 240);
+}
+.my-order table tr td,th{
+    padding: 20px 10px;
+    border-bottom: 1.5px solid rgb(240, 240, 240);
+}
+.actionOrderClient button{
+    display: inline-block;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    background-color: transparent;
+    padding: 0px 10px;
+    background-color: green;
+    padding: 5px 10px;
+    margin: 2px;
+}
+.actionOrderClient form button.cancelBtn{
+    background-color: red;
+}
+.actionOrderClient form button{
+    color: white;
+}
+.actionOrderClient button{
+    color: black;
+}
+/* -------------------------------- MY ORDER -------------------------------- */
+
+
+
+/* ---------- FRAME RESPONSIVE --------- */
+@media screen and (max-width: 1080px){}
+@media screen and (max-width: 900px){
+    main #boxs-infor{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width: 768px){}
+@media screen and (max-width: 667px){
+    #my-profile{
+        gap: 30px;
+        padding: 10px;
+    }
+    .avatar{
+        margin: auto;
+        grid-column: 1/6;
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+    .infor-user-profile{
+        grid-column: 1/6;
+    }
+    table tr .rpbl{
+        display: none;
+    }
+    table .actionOrderClient a{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 575px){}
+@media screen and (max-width: 480px){}
+@media screen and (max-width: 414px){}
+@media screen and (max-width: 360px){}
+@media screen and (max-width: 320px){}
+/* ---------- FRAME RESPONSIVE --------- */

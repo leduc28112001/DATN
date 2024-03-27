@@ -1,0 +1,104 @@
+/* footer{
+    padding: 10px;
+    background-color: #343541;
+}
+footer .contact-app{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px;
+}
+.contact-app a{
+    display: block;
+    font-size: 23px;
+    color: white;
+    transition: 0.3s;
+}
+.contact-app a:hover{
+    color: gray;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+.copyright{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    color: white;
+} */
+footer{
+    padding: 20px;
+    background-color: var(--color-admin);
+    color: white;
+}
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer ul li{
+    list-style: none;
+}
+li.title-footer{
+    padding-top: 10px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+footer a{
+    display: block;
+    color: white;
+    padding: 2px 0px;
+}
+footer a:hover{
+    color: gray;
+    transition: 0.2s;
+}
+footer .apps{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px 0px;
+}
+footer button{
+    display: block;
+    padding: 10px 20px;
+    background-color: #336aea;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+.copyright{
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid white;
+    margin-top: 20px;
+    font-size: 16px;
+}
+/* ---------- FRAME RESPONSIVE --------- */
+@media screen and (max-width: 1080px){}
+@media screen and (max-width: 900px){
+    footer .container-footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    footer .container-footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 667px){}
+@media screen and (max-width: 575px){}
+@media screen and (max-width: 480px){
+    footer .container-footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width: 414px){}
+@media screen and (max-width: 360px){}
+@media screen and (max-width: 320px){}
+/* ---------- FRAME RESPONSIVE --------- */

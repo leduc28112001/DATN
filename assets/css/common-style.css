@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a,p,span,li{
+    line-height: 20px;
+}
+body{
+    font-size: 15px;
+    font-family: 'Cabin', sans-serif;
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+}
+main{
+    padding: 20px;
+}
+button, select{
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+}
+input::placeholder{
+    font-family: 'Cabin', sans-serif;
+}
+.span-red{
+    font-weight: bold;
+    color: red;
+}
+.span-navi{
+    font-weight: bold;
+    color: navy;
+}
+.span-black{
+    font-weight: bold;
+    color: black;
+}
+.span-green{
+    font-weight: bold;
+    color: green;
+}
+.span-blue{
+    font-weight: bold;
+    color: #3B44F6;
+}
+.span-orange{
+    font-weight: bold;
+    color: #F57328;
+}
+.span-yellow{
+    font-weight: bold;
+    color: #ffb80b;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.aColor{
+    border: 1px solid gray;
+}

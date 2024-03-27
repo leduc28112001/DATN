@@ -1,0 +1,340 @@
+#dashboard{
+    display: flex;
+    align-items: stretch;
+}
+.controller-dashboard{
+    padding: 10px 20px;
+    background-color: var(--color-admin);
+    color: white;
+    height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.controller-dashboard li{
+    position: relative;
+    list-style: none;
+}
+.controller-dashboard a{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    transition: 0.2s;
+}
+.controller-dashboard a:hover{
+    scale: 0.95;
+    color: gray;
+    transition: 0.2s;
+}
+/* ---------------------------------- LEFT ---------------------------------- */
+.content-dashboard{
+    width: 100%;
+    padding: 10px;
+    border-top: 50px solid var(--color-admin);
+    position: relative;
+}
+table{
+    text-align: center;
+    border: 2px solid;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: white;
+    font-size: 13px;
+}
+table th{
+    background-color: var(--color-admin);
+    color: white;
+    border-color: var(--color-admin);
+    white-space: nowrap;
+}
+table td,th{
+    position: relative;
+    border: 2px solid;
+    padding: 5px 10px;
+    overflow-wrap: break-word;
+}
+.inforUserMore{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px;
+    scale: 0;
+    height: 100%;
+    transition: 0.2s;
+}
+td:hover .inforUserMore{
+    scale: 1;
+    transition: 0.2s;
+}
+.productNameTD{
+    max-width: 250px;
+    text-align: left;
+}
+.statusMain{
+    justify-content: center;
+}
+form.statusMore{
+    display: flex;
+    top: 50%;
+    left: -70%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding: 5px 10px;
+    background-color: white;
+    z-index: 99;
+    box-shadow: 0px 0px 3px gray;
+    transition: 0.2s;
+    scale: 0;
+}
+.statusMain:hover form.statusMore{
+    left: 50%;
+    scale: 1;
+    transition: 0.2s;
+}
+td.actions form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+td button{
+    display: block;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
+}
+button.green{
+    background-color: green;
+}
+button.add{
+    border-radius: 3px;
+    font-size: 15px;
+    margin: 5px 0px;
+    border: none;
+    background-color: var(--color-admin);
+}
+button.add a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+}
+button.red{
+    background-color: red;
+}
+button.black{
+    background-color: black;
+}
+button.black{
+    background-color: black;
+}
+button.yellow{
+    background-color: #ffb80b;
+}
+td a{
+    display: inline-block;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+}
+td div{
+    display: flex;
+}
+a.green{
+    background-color: green;
+}
+a.red{
+    background-color: red;
+}
+a.black{
+    background-color: black;
+}
+a.back,a.refresh{
+    width: 40px;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: -40px;
+}
+a.refresh{
+    left: 54%;
+}
+a.add-edit{
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+/* ITEM MORE */
+.controller-dashboard li:hover .item-more-admin{
+    transform: translateX(0);
+    transition: 0.2s;
+    visibility: visible;
+    opacity: 1;
+}
+.item-more-admin{
+    position: absolute;
+    top: 5px;
+    left: 120px;
+    width: max-content;
+    transform: translateX(20px);
+    visibility: hidden;
+    transition: 0.2s;
+    opacity: 0;
+}
+.item-more-admin > a{
+    padding: 5px 10px;
+    background-color: var(--color-admin);
+    border: 2px solid gray;
+}
+.item-more-admin > a:hover{
+    background-color: var(--color-admin);
+    color: white;
+}
+/* ITEM MORE */
+form.input{
+    background-color: white;
+    padding: 0px 10px;
+}
+.input textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1.5px solid gray;
+}
+.input label{
+    display: block;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+.input input,select{
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid gray;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+.input textarea:focus, input:focus{
+    border-color: #fd411b;
+    outline: 3px solid #ff2a00 ;
+    transition: 0.1s;
+    border-radius: 2px;
+}
+.input button{
+    background-color: var(--color-admin);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 15px;
+}
+.input button:hover{
+    opacity: 0.9;
+}
+a.image-more{
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    opacity: 0;
+    transition: 0.3s;
+}
+td:hover a.image-more{
+    transition: 0.2s;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+td.textleft{
+    text-align: left;
+}
+/* CHART JS */
+canvas{
+    min-width: 100%;
+}
+/* CHART JS */
+.rlvcmt{
+    position: relative;
+}
+.dot-comments{
+    position: absolute;
+    font-size: 8px;
+    color: white;
+    top: -7px;
+    right: -2px;
+    padding: 2px 6px;
+    background-color: red;
+    line-height: 10px;
+    border-radius: 30px;
+}
+/* ------------------------------- STATISTICAL ------------------------------ */
+.statistical{
+    display: flex;
+    justify-content: space-between;
+}
+.box-statis{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    justify-content: center;
+}
+.ic-statis{
+    font-size: 40px;
+}
+.statis-right{
+    display: flex;
+    flex-direction: column;
+}
+/* ------------------------------- STATISTICAL ------------------------------ */
+/* VIEW-MORE */
+.view-more{
+    display: flex;
+    justify-content: center;
+}
+.view-more button{
+    display: block;
+    padding: 10px 15px;
+    border: 2px solid;
+    border-radius: 3px;
+    background-color: var(--color-admin);
+    color: white;
+    font-size: 16px;
+}
+/* VIEW-MORE */
